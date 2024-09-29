@@ -20,7 +20,7 @@ export default function IconButton({iconSource, color, onClick, disabled, ariaLa
             disabled={disabled} 
             aria-label={ariaLabel}
         >
-            <p hidden>{ariaLabel}</p>
+            <span hidden>{ariaLabel}</span>
             <img className='icon-button__icon' 
                  src={iconSource} 
                  alt={alt}
