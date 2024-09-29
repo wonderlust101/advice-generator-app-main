@@ -8,10 +8,9 @@ type iconButton = {
     onClick?: React.MouseEventHandler<HTMLButtonElement>;
     disabled?: boolean;
     ariaLabel?: string;
-    alt?: string;
 }
 
-export default function IconButton({iconSource, color, onClick, disabled, ariaLabel, alt}: iconButton) {
+export default function IconButton({iconSource, color, onClick, disabled, ariaLabel}: iconButton) {
     
     return (
         <button 
@@ -23,7 +22,7 @@ export default function IconButton({iconSource, color, onClick, disabled, ariaLa
             <span hidden>{ariaLabel}</span>
             <img className='icon-button__icon' 
                  src={iconSource} 
-                 alt={alt}
+                 alt=''
                  role='presentation'
             />
         </button>
