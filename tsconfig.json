@@ -1,11 +1,8 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
-    "baseUrl": "./", 
-    "paths": {
-      "@types/*": ["types/*"]
-    },
-    "outDir": "./dist", 
+    "baseUrl": "./",
+    "outDir": "./dist",
     "moduleResolution": "node",
     "target": "es6",
     "module": "esnext",
@@ -13,6 +10,8 @@
     "esModuleInterop": true,
     "skipLibCheck": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.d.ts"]
+  "include": [
+    "src/**/*",
+    "vite.config.ts"
+  ]
 }
