@@ -19,7 +19,8 @@ export default function IconButton({iconSource, color, onClick, disabled, ariaLa
             disabled={disabled} 
             aria-label={ariaLabel}
         >
-            <span hidden>{ariaLabel}</span>
+            <span className='sr-only'>{ariaLabel}</span>
+            
             <img className='icon-button__icon' 
                  src={iconSource} 
                  alt=''
