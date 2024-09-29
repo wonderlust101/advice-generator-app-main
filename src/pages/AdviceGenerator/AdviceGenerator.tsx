@@ -70,7 +70,7 @@ export default function AdviceGenerator() {
                     color="green"
                     onClick={fetchAdvice}
                     disabled={loading}
-                    aria-label="Get new advice"
+                    ariaLabel="Get new advice"
                 />
             </div>
         </main>
